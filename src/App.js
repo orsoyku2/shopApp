@@ -1,4 +1,5 @@
 import HomePage from './pages/HomePage/index'
+import Shop from './pages/Shop/index'
 import { Switch,Route,Link } from 'react-router-dom';
 
 const Hats = (props) => {
@@ -20,7 +21,8 @@ function App() {
     <Switch>
       <Route exact path="/" component={HomePage}></Route>
       <Route exact path="/hats" component={Hats}></Route>
-      <Route  path="/topics/:topicId" component={Topics}></Route>
+      <Route path="/topics/:topicId" component={Topics}></Route>
+      <Route exact path='/shop' component= {Shop}></Route>
     </Switch>
   );
 }
