@@ -1,8 +1,12 @@
 import React from 'react'
 
-const previewCollection = () => {
+const previewCollection = ({title,items}) => {
       return (
-            <div>
+            <div className='collection-preview'>
+                  <h1 className='title'>{title.toUpperCase()}</h1>
+                  <div className='preview'>
+                        {items.filter((item,idx)=>idx<4).map(item => (item.name))}
+                  </div>
                   
             </div>
       )
