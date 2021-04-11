@@ -1,6 +1,8 @@
 import HomePage from './pages/HomePage/index'
 import ShopPage from './pages/Shop/index'
-import { Switch,Route,Link } from 'react-router-dom';
+import Header from './components/header/index'
+import { Switch, Route, Link } from 'react-router-dom';
+import "./App.css";
 
 const Hats = (props) => {
   console.log(props)
@@ -18,12 +20,15 @@ const Topics = (props) => {
 
 function App() {
   return (
+    <div>
+    <Header/>
     <Switch>
       <Route exact path="/" component={HomePage}></Route>
       <Route exact path="/hats" component={Hats}></Route>
       <Route path="/topics/:topicId" component={Topics}></Route>
       <Route exact path="/shop" component={ShopPage}></Route>
-    </Switch>
+      </Switch>
+    </div>
   );
 }
 
