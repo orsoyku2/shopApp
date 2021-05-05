@@ -16,11 +16,7 @@ const Header = () => {
               Contact
             </Link>
             <Link class="option" to="/signin">
-<<<<<<< HEAD
               Sign In
-=======
-              Sign in
->>>>>>> abd7b59f9aad2ed73d06df0fe9c26bd32a6b3e5b
             </Link>
           </div>
         </div>
